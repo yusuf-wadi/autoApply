@@ -8,10 +8,11 @@ key = "greenhouse"
 file = "misc/links.html"
 specAct = "internship"
 userpp = r"C:\Users\thewa\AppData\Local\BraveSoftware\Brave-Browser-Nightly\User Data"
+browser_path = "C:/Program Files/BraveSoftware/Brave-Browser-Nightly/Application/brave.exe"
 ###
 
 links = crawl_link.fromFile(file, key) #or fromLink
 
-openFromLinks.openLinks(links,specAct,userpp)
+openFromLinks.openLinks(links,specAct,userpp,b_path = browser_path)  
 
 
