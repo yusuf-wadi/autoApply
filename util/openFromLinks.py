@@ -3,6 +3,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 from time import sleep
+import selenium
 
 
 def runWeb(userpp=""):
@@ -24,6 +25,7 @@ def runWeb(userpp=""):
     #options.add_experimental_option("prefs", prefs)
     options.add_experimental_option("detach", True)
     driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+
     return driver
 
 
@@ -65,13 +67,11 @@ def openLinks(links=[], specAct="",userpp=""):
 def __special(specAct, driver):
     match(specAct):
         case "internship":
-            sleep(0.2)
-            #use beautiful soup
-            #or find a way to directly activate the extension
-            iframe = driver.find_element("xpath", "/html/simplifyjobs-popup")
-            driver.switch_to.frame(iframe)
-            driver.find_element(
-                "xpath", "//div/div/div/div[2]/button[1]").click()
-    
+            sleep(1)
+            try:
+                shadow_section = driver.execute_script('''return document.querySelector("simplifyjobs-popup").shadowRoot.querySelector("#fill-button")''')
+                shadow_section.click()
+            except selenium.common.exceptions.JavascriptException:
+                print("next")
         case _:
             return False
