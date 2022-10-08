@@ -1,4 +1,3 @@
-from genericpath import exists
 import requests
 from bs4 import BeautifulSoup as bs
 from time import sleep
