@@ -12,13 +12,15 @@
 - to find paths, type chrome://version
 - MAKE SURE THERE ARE NO INSTANCES OF YOUR TARGET BROWSER OPEN AT RUNTIME
 ---
-## button update _10/13/22_:
+
+## Changelog:
+### button update _10/13/22_:
 
 - clicks all buttons on a page, preferably redirect links (for internships)
 - if the buttons are on simplify.com, clicking the "apply" button will automatically<br>
 apply to the redirected link
 
-
+---
 
 ## Known Bugs
 
