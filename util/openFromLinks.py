@@ -1,7 +1,6 @@
 from bs4 import BeautifulSoup as bs
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.keys import Keys
 from time import sleep
 import selenium
 
@@ -29,16 +28,18 @@ def runWeb(userpp="",browser_path=""):
     return driver
 
 
-def openNTab(driver, link="", i=0):
+def openNTab(driver, link="", index =None):
     """opens new tab in instanced driver"""
-    if link != "":
+    if link != "" and index==None:
         driver.execute_script(f"window.open('{link}','{link}')")
         driver.switch_to.window(f'{link}')
-    else:
+        return
+    elif index == None:
         driver.execute_script("window.open('about:blank','main')")
         driver.switch_to.window('main')
-    # driver.execute_script(f"window.open('about:blank','{str(i)}')")
-    # driver.switch_to.window(f"{str(i)}")
+        return
+    driver.execute_script(f"window.open('{link}','main')")
+    driver.switch_to.window('main')
 
 
 def openLinks(links=[], specAct="", userpp="",b_path=""):
@@ -68,7 +69,7 @@ def openLinks(links=[], specAct="", userpp="",b_path=""):
     openNTab(driver=driver)
     while i < len(links):
         link = next(iterLinks)
-        openNTab(driver=driver,i=i, link=link)
+        openNTab(driver=driver,index=i, link=link)
         #driver.get(next(iterLinks))
         if specAct != "":
             tf = __special(specAct, driver)

@@ -9,7 +9,7 @@ And we're back! Use this repo to share and keep track of software, tech, CS, PM,
 
 ---
 
-<div align="center">
+<div align"center">
 	<p>
 		<a href="https://simplify.jobs/?utm_source=pittcsc&utm_medium=internships_repo">
 			<b>Applying to internships?</b>
