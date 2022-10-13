@@ -22,6 +22,8 @@ apply to the redirected link
 
 ---
 
+![sped](misc/sped.jpg?raw=true "I am speed")
+
 ## Known Bugs
 
 - [x] Can not activate Simplify yet (fixed)
