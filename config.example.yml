@@ -1,0 +1,8 @@
+llm: False
+llm_path: /path/to/llm
+scrolls: 1
+cover_letter: False
+role: "Software Engineer"
+driver_path: /path/to/chromedriver
+user_profile_path: /path/to/chrome/user/profile
+query: "software engineer grad role"
