@@ -118,11 +118,12 @@ def fillApps(browser: webdriver.Chrome, links: list[list], model=None, inBatches
                     next_apps = input(
                         "Press enter to continue to next batch of apps: ")
                     close_all_tabs(browser)
-        else:
-            openLinks(links, search_tab, browser=browser)
+        else:#default
+            openLinks(links, browser=browser)
             for window_handle in browser.window_handles[1:]:
                 doApp(browser, window_handle, model=model)
         # close all individual open tabs
+        browser.execute_script("alert('All done!')")   
         while True:
             # wait for user input q
             if input("Press q to quit: ") == "q":
@@ -145,8 +146,16 @@ def doApp(browser: webdriver.Chrome, window_handle: str, model: GPT4All):
         browser.execute_script(
             '''return document.querySelector("#simplifyJobsContainer > span").shadowRoot.querySelector("#fill-button").click()''')
         if model is not None:
-            llm_pass(browser, model, company)
+            resume = load_pdf()
+            llm_pass(browser, model, company, resume)
         else:
+            try:
+                submit = browser.find_element(By.ID, "submit_app")
+                submit.click()
+            except common.NoSuchElementException:
+                print("No submit button found")
+                browser.close()
+                pass
             print(f"done with {company}")
 
     except common.exceptions.JavascriptException:
@@ -155,7 +164,7 @@ def doApp(browser: webdriver.Chrome, window_handle: str, model: GPT4All):
         pass
 
 
-def llm_pass(browser: webdriver.Chrome, model: GPT4All, company: str):
+def llm_pass(browser: webdriver.Chrome, model: GPT4All, company: str, resume):
     print("Using LLM")
     # find job description
     job_desc = browser.find_element(
@@ -165,10 +174,8 @@ def llm_pass(browser: webdriver.Chrome, model: GPT4All, company: str):
     job_desc_keys = getJobDescKeys(job_desc)
 
     print(job_desc_keys)
+    
     # make cover letter
-
-    # load resume
-    resume = load_pdf()
     if resume is None:
         print("No resume found")
         return None
