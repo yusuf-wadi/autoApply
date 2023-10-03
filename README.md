@@ -11,6 +11,7 @@
 - fill in the example config.yml file and rename it to config.yml (from config.example.yml)
 - to find paths, type chrome://version
 - MAKE SURE THERE ARE NO INSTANCES OF YOUR TARGET BROWSER OPEN AT RUNTIME
+- take a look at test.py for example usage
 ---
 
 ## Changelog:
