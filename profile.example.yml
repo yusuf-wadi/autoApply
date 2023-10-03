@@ -1,0 +1,25 @@
+fname: ""
+lname: ""
+email: ""
+phone: ""
+race: ""
+gender: True
+hispanic: False
+disabled: False
+veteran: False
+
+college: ""
+degree: ""
+major: ""
+gpa: ""
+
+address: ""
+city: ""
+state: ""
+zip: ""
+country: ""
+visa: False
+
+linkedin: ""
+github: ""
+website: ""
