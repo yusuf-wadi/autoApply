@@ -15,10 +15,9 @@ if __name__ == '__main__':
 
     autoapp = AutoApplier(config=config, profile=profile)
     
-    link = ["https://boards.greenhouse.io/veeventures/jobs/4504805003"]
     autoapp.setup_firefox()
-    autoapp.openLinks(link)
-    autoapp.doApp(window_handle=autoapp.browser.window_handles[-1])
+    links = autoapp.linksFromLink("https://github.com/SimplifyJobs/New-Grad-Positions")
+    autoapp.fillApps(links)
     
     
     

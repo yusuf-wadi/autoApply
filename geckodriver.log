@@ -2048,3 +2048,224 @@ console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefin
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
 1696310818099	Marionette	INFO	Stopped listening on port 56683
 Dynamically enable window occlusion 1
+1696311230344	geckodriver	INFO	Listening on 127.0.0.1:56849
+1696311233359	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56850" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thewa\\AppData\\Local\\Temp\\rust_mozprofileLBcCrn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696311233619	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696311233688	Marionette	INFO	Listening on port 56859
+Read port: 56859
+WebDriver BiDi listening on ws://127.0.0.1:56850
+1696311233760	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56850/devtools/browser/1033ea8a-a492-4ff4-9d7c-4b850cde1801
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+JavaScript warning: https://github.githubassets.com/assets/environment-9dce231eeb86.js, line 1: Script terminated by timeout at:
+24601/<@https://github.githubassets.com/assets/environment-9dce231eeb86.js:1:7376
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1696312556186	Marionette	INFO	Stopped listening on port 56859
+Dynamically enable window occlusion 1
+1696312565985	geckodriver	INFO	Listening on 127.0.0.1:57271
+1696312569012	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57272" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thewa\\AppData\\Local\\Temp\\rust_mozprofileoSdtWv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696312569440	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696312569520	Marionette	INFO	Listening on port 57279
+WebDriver BiDi listening on ws://127.0.0.1:57272
+Read port: 57279
+1696312569735	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57272/devtools/browser/3ee063e8-3d49-4831-9724-bb17e058d306
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+JavaScript warning: https://platform.linkedin.com/in.js, line 7: Script terminated by timeout at:
+N@https://platform.linkedin.com/in.js:7:18984
+e@https://platform.linkedin.com/in.js:14:66698
+s@https://platform.linkedin.com/in.js:14:79796
+U@https://platform.linkedin.com/in.js:14:106921
+
+JavaScript warning: https://github.githubassets.com/assets/environment-9dce231eeb86.js, line 1: Script terminated by timeout at:
+24601/<@https://github.githubassets.com/assets/environment-9dce231eeb86.js:1:7376
+
+1696312961669	Marionette	INFO	Stopped listening on port 57279
+Dynamically enable window occlusion 1
+1696312971587	geckodriver	INFO	Listening on 127.0.0.1:57502
+1696312974619	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57503" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thewa\\AppData\\Local\\Temp\\rust_mozprofileeQFNwn"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696312974898	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696312974960	Marionette	INFO	Listening on port 57513
+WebDriver BiDi listening on ws://127.0.0.1:57503
+Read port: 57513
+1696312975142	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57503/devtools/browser/c472bafb-502d-4459-b746-c7ff515d97e2
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+JavaScript warning: https://github.githubassets.com/assets/environment-9dce231eeb86.js, line 1: Script terminated by timeout at:
+24601/<@https://github.githubassets.com/assets/environment-9dce231eeb86.js:1:7376
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1696313188788	Marionette	INFO	Stopped listening on port 57513
+Dynamically enable window occlusion 1
+1696313196964	geckodriver	INFO	Listening on 127.0.0.1:58097
+1696313200000	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58098" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thewa\\AppData\\Local\\Temp\\rust_mozprofilevMRRB7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696313200278	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696313200338	Marionette	INFO	Listening on port 58106
+WebDriver BiDi listening on ws://127.0.0.1:58098
+Read port: 58106
+1696313200520	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58098/devtools/browser/c945cfca-a93b-42e2-9910-e84e48f606df
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+JavaScript warning: https://github.githubassets.com/assets/environment-9dce231eeb86.js, line 1: Script terminated by timeout at:
+24601/<@https://github.githubassets.com/assets/environment-9dce231eeb86.js:1:7376
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1696313513681	Marionette	INFO	Stopped listening on port 58106
+Dynamically enable window occlusion 1
+1696313522343	geckodriver	INFO	Listening on 127.0.0.1:58513
+1696313525371	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58514" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thewa\\AppData\\Local\\Temp\\rust_mozprofilenabDQW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696313525629	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696313525690	Marionette	INFO	Listening on port 58522
+WebDriver BiDi listening on ws://127.0.0.1:58514
+Read port: 58522
+1696313525819	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58514/devtools/browser/3f57c2b5-bdd6-4fb4-9ca5-e9c2565310ab
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 241))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 241))
+console.error: "Exception when calling onAvailable handler" "Target already destroyed, unable to fetch children fronts" (new Error("Target already destroyed, unable to fetch children fronts", "resource://devtools/client/fronts/targets/target-mixin.js", 241))
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+console.error: "Tried to call watchFronts for the 'inspector' type on an already destroyed front 'windowGlobalTarget'."
+JavaScript warning: https://github.githubassets.com/assets/environment-9dce231eeb86.js, line 1: Script terminated by timeout at:
+24601/<@https://github.githubassets.com/assets/environment-9dce231eeb86.js:1:7376
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1696313805316	Marionette	INFO	Stopped listening on port 58522
+Dynamically enable window occlusion 1
+1696313813360	geckodriver	INFO	Listening on 127.0.0.1:58704
+1696313816401	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58705" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thewa\\AppData\\Local\\Temp\\rust_mozprofilekpvBGb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1696313816656	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1696313816719	Marionette	INFO	Listening on port 58712
+WebDriver BiDi listening on ws://127.0.0.1:58705
+Read port: 58712
+1696313816864	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58705/devtools/browser/d36ffa3a-c8cd-41d5-9f5f-427df9e37cc4
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+1696313831808	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+1696313904626	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:429:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:178:31
+JavaScript warning: https://github.githubassets.com/assets/vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js-9a3541181451.js, line 15: Script terminated by timeout at:
+relinquishControlOfScrollRestoration@https://github.githubassets.com/assets/vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js-9a3541181451.js:15:17330
+pageWillUnload@https://github.githubassets.com/assets/vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js-9a3541181451.js:15:32439
+67852/PageObserver/this.pageWillUnload@https://github.githubassets.com/assets/vendors-node_modules_github_turbo_dist_turbo_es2017-esm_js-9a3541181451.js:15:20295
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1696313983798	Marionette	INFO	Stopped listening on port 58712
+Dynamically enable window occlusion 1

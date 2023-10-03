@@ -25,9 +25,12 @@ apply to the redirected link
 - plans to implement LLM to create custom cover letter using your resume, the job descripton, and company name all as reference
 ---
 
-![sped](misc/sped.jpg?raw=true "I am speed")
+![sped](v1/misc/sped.jpg?raw=true "I am speed")
 
 ## Known Bugs
 
 - [x] Can not activate Simplify yet (fixed)
 - [ ] LLM buggin fr
+- [x] no more simplify
+- [x] config and profile
+- [ ] robustness against different application types 
