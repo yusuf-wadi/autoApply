@@ -510,6 +510,6 @@ class AutoApplier:
         scrolls = int(self.config["scrolls"])
         inBatches = self.config["inBatches"]
         self.browser = self.setup_self.browser()
-        links = self.searchLinks(self.browser, scrolls=scrolls)
-        self.fillApps(self.browser, links, model=model if isinstance(
+        links = self.searchLinks(scrolls=scrolls)
+        self.fillApps(links, model=model if isinstance(
             model, GPT4All) else None, inBatches=inBatches)
