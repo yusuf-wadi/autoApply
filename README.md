@@ -7,9 +7,9 @@
 ## Important
 
 - run "pip install -r requirements.txt"
-- setup Simplify extension for auto application to work
+- <s>setup Simplify extension for auto application to work</s> no more simplify
 - fill in the example config.yml file and rename it to config.yml (from config.example.yml)
-- to find paths, type chrome://version
+- <s>to find paths, type chrome://version</s> use firefox function in autoapp, geckodriver is builtin
 - MAKE SURE THERE ARE NO INSTANCES OF YOUR TARGET BROWSER OPEN AT RUNTIME
 - take a look at test.py for example usage
 ---
