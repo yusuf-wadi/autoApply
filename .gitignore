@@ -2,3 +2,4 @@
 /util/__pycache__
 config.yml
 profile.yml
+geckodriver.log

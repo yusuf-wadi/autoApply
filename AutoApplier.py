@@ -1,4 +1,6 @@
-# a code that searches google for a given query, and opens each link, waits for the simplify popup, presses it, reads the job description, and answers all remaining questions
+#Author: Yusuf Wadi
+#Date Created 
+
 # on the page with the context of the description and the users resume
 
 # import libraries
@@ -13,7 +15,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from langchain.llms import GPT4All
-from langchain.chains import RetrievalQA
+from langchain.chains import RetrievalQA, load_chain
 from langchain.document_loaders import PyPDFLoader
 from langchain.embeddings import HuggingFaceEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -35,14 +37,65 @@ class AutoApplier:
     # load self.config variables from self.config.yml
     def __init__(self, config: dict, profile: dict):
 
-        self.config = config
-        self.profile = profile
-        self.resume = os.path.normpath(
-            os.getcwd() + "/resume/" + self.profile["resume"] + ".pdf")
+        self.config = self.verifyConfig(config)
+        self.profile = self.verifyProfile(profile)
+        #create autoApply folder in documents if it doesnt exist
+        if not os.path.exists(os.path.normpath(os.path.expanduser("~/Documents/autoApply/"))):
+            os.mkdir(os.path.normpath(os.path.expanduser("~/Documents/autoApply/")))
+        # if unix
+        if os.name == "posix":
+            # path to resume in unix document folder
+            self.resume = os.path.normpath( os.path.expanduser("~/Documents/autoApply/") + self.profile["resume"] + ".pdf")
+        # if windows
+        elif os.name == "nt":
+            # path to resume in windows document folder
+            self.resume = os.path.normpath(os.path.expanduser("~/Documents/autoApply/") + self.profile["resume"] + ".pdf")
+        
         self.browser = None
 
     # ====#
-
+    
+    def verifyConfig(self, config: dict) -> dict:
+        # verify config variables
+        if config["driver_path"] is None:
+            raise ValueError("driver_path is None")
+        if config["query"] is None:
+            raise ValueError("query is None")
+        if config["batch_size"] is None:
+            raise ValueError("batch_size is None")
+        if config["scrolls"] is None:
+            raise ValueError("scrolls is None")
+        if config["inBatches"] is None:
+            raise ValueError("inBatches is None")
+        if config["role"] is None:
+            raise ValueError("role is None")
+        if config["llm"] is None:
+            if config["model_path"] is None:
+                raise ValueError("model_path is None, llm is None")
+            raise ValueError("llm is None")
+        if config["timeframe"] is None:
+            raise ValueError("timeframe is None")
+        return config
+    
+    def verifyProfile(self, profile: dict) -> dict:
+        if profile["fname"] is None:
+            raise ValueError("fname is None")
+        if profile["lname"] is None:
+            raise ValueError("lname is None")
+        if profile["email"] is None:
+            raise ValueError("email is None")
+        if profile["phone"] is None:
+            raise ValueError("phone is None")
+        if profile["linkedin"] is None:
+            raise ValueError("linkedin is None")
+        if profile["website"] is None:
+            raise ValueError("website is None")
+        if profile["github"] is None:
+            raise ValueError("github is None")
+        if profile["visa"] is None:
+            raise ValueError("visa is None")
+        return profile
+    
     def setup_browser(self):
         # define the path to the chromedriver executable
         driver_path = self.config["driver_path"]
@@ -71,12 +124,12 @@ class AutoApplier:
 
     def searchLinks(self, scrolls: int = 3, inBatches=False):
         # navigate to Google and search for the query
-        self.close_all_tabs(self.browser)
+        self.close_all_tabs()
         query = self.config["query"] + " site:boards.greenhouse.io/*/jobs"
-        self.browser.get("https://www.google.com/")
-        search_box = self.browser.find_element(By.NAME, "q")
-        search_box.send_keys(query)
-        search_box.send_keys(Keys.RETURN)
+        self.browser.get("https://www.google.com/search?q=" + query + "&as_qdr=" + self.config["timeframe"])
+        # search_box = self.browser.find_element(By.NAME, "q")
+        # search_box.send_keys(query)
+        # search_box.send_keys(Keys.RETURN)
 
         # scroll all the way down, wait for the search results to load, then scroll again
         for _ in range(scrolls):
@@ -164,14 +217,14 @@ class AutoApplier:
                                                                                     filter(option => option.getAttribute(\"value\") == {value})[0]\
                                                                                         .textContent;")
 
-            sleep(0.5)
+            sleep(0.2)
 
         except common.exceptions.JavascriptException:
             print("JavascriptException")
             pass
 
     def simplify(self):
-        sleep(1)
+        sleep(0.5)
         application = self.browser.find_element(By.ID, "application_form")\
                 if self.check_if_exists("application_form") else None
         main_fields = application.find_element(By.ID, "main_fields").find_elements(By.CLASS_NAME, "field")\
@@ -466,7 +519,7 @@ class AutoApplier:
 
     def load_pdf(self):
 
-        pdf_files = glob.glob("resume/*.pdf")
+        pdf_files = glob.glob(self.resume)
 
         if pdf_files:
             first_pdf = pdf_files[0]
@@ -481,18 +534,23 @@ class AutoApplier:
 
     def create_cover(self, job_desc_keys: str, model: GPT4All, resume: str, company: str, db: Chroma, qa):
 
-        role = "Software Engineer"
+        cover_letter = None
+        role = self.config["role"]
         prompt = f"Job Description Key Words: {job_desc_keys}\n\n Corressponding Cover Letter for {role} at {company} from applicant:\n\n"
         print(prompt)
         print("Generating cover letter...")
-        cover_letter = qa(prompt)
-        # write to file in cover_letters folder
-        with open(f"cover_letters/{company}_cover_letter.txt", "w") as f:
-            for line in cover_letter.split("\n"):
-                f.write(f"{line}\n")
+        if self.profile["local"]:
+            cover_letter = qa(prompt)
+            # write to file in cover_letters folder
+            with open(f"cover_letters/{company}_cover_letter.txt", "w") as f:
+                for line in cover_letter.split("\n"):
+                    f.write(f"{line}\n")
 
-        # wait for user input (testing purposes)
-        ###
+        else:
+            cover_letter = OpenAI().generate
+            
+            
+            
 
         return cover_letter
 

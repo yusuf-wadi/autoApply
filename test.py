@@ -16,7 +16,8 @@ if __name__ == '__main__':
     autoapp = AutoApplier(config=config, profile=profile)
     
     autoapp.setup_firefox()
-    links = autoapp.linksFromLink("https://github.com/SimplifyJobs/New-Grad-Positions")
+    #links = autoapp.linksFromLink("https://github.com/SimplifyJobs/New-Grad-Positions")
+    links = autoapp.searchLinks()
     autoapp.fillApps(links)
     
     

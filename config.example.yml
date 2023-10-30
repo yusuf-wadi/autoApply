@@ -2,9 +2,12 @@ llm: False #if you want to use an llm model
 local: False #if you want to use a local llm model
 llm_path: /path/to/llm #path to ggml llm model if using local
 scrolls: 1 #number of scrolls to perform, corresponds to number of pages to scrape
+inBatches: False #if you want to open links in batches
+batch_size: 6 #number of queries to open at a time
 cover_letter: False #if you want to generate cover letters
 role: "Software Engineer" #specific role you are applying for
 driver_path: /path/to/chromedriver #chromedriver path, can be found with chrome://version or brave://version
-user_profile: /path/to/chrome/user/profile #chrome user profile
+#user_profile: /path/to/chrome/user/profile #chrome user profile
 query: "software engineer grad role" #google search query, can be anything
+timeframe: "w" #timeframe for google search, can be d, w, m, y
 ```
