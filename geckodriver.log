@@ -2340,3 +2340,73 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 1698641720355	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
 1698684375687	Marionette	INFO	Stopped listening on port 64031
 Dynamically enable window occlusion 1
+1701877017104	geckodriver	INFO	Listening on 127.0.0.1:61486
+1701877020153	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61487" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thewa\\AppData\\Local\\Temp\\rust_mozprofilequ3vSb"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701877020461	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701877020543	Marionette	INFO	Listening on port 61497
+WebDriver BiDi listening on ws://127.0.0.1:61487
+Read port: 61497
+1701877020754	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61487/devtools/browser/23a59706-4402-4c2d-9036-17d14ae80c50
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+1701877050480	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1701877067925	Marionette	INFO	Stopped listening on port 61497
+Dynamically enable window occlusion 1
+1701879346717	geckodriver	INFO	Listening on 127.0.0.1:62312
+1701879349764	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62313" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thewa\\AppData\\Local\\Temp\\rust_mozprofileHrnEoy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701879350120	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701879350194	Marionette	INFO	Listening on port 62321
+Read port: 62321
+WebDriver BiDi listening on ws://127.0.0.1:62313
+1701879350253	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62313/devtools/browser/463f08e4-4924-4975-bdb7-185ab769520c
+1701879380473	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1701879391568	Marionette	INFO	Stopped listening on port 62321
+Dynamically enable window occlusion 1
+1701879439020	geckodriver	INFO	Listening on 127.0.0.1:62367
+1701879442054	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62368" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thewa\\AppData\\Local\\Temp\\rust_mozprofile9cgcpi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701879442344	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701879442412	Marionette	INFO	Listening on port 62377
+WebDriver BiDi listening on ws://127.0.0.1:62368
+Read port: 62377
+1701879442574	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62368/devtools/browser/4b456ff3-1d7d-4461-b1d4-50c042727501
+1701879473588	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1701879739858	geckodriver	INFO	Listening on 127.0.0.1:62479
+1701879742874	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62480" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\thewa\\AppData\\Local\\Temp\\rust_mozprofile10QNU9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701879743144	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701879743210	Marionette	INFO	Listening on port 62489
+WebDriver BiDi listening on ws://127.0.0.1:62480
+Read port: 62489
+1701879743366	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62480/devtools/browser/73152177-9187-4e15-bddb-57623db44059
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."
+1701879773171	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://boards.greenhouse.io."

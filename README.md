@@ -26,6 +26,15 @@ apply to the redirected link
 - plans to implement LLM to create custom cover letter using your resume, the job descripton, and company name all as reference
 ---
 
+## Usage
+
+currently  
+
+- run the `test.py` script with the `https://github.com/SimplifyJobs/Summer2024-Internships` link to see the program in action
+- `python test.py -u "https://github.com/SimplifyJobs/Summer2024-Internships"`
+<br/>
+<br/>
+---
 ![sped](v1/misc/sped.jpg?raw=true "I am speed")
 
 ## Known Bugs

@@ -560,7 +560,18 @@ class AutoApplier:
         model = GPT4All(model=self.config["model_path"], n_ctx=1024, n_batch=1, n_threads=8,
                         n_parts=1, n_predict=1, seed=42, f16_kv=False, logits_all=False, vocab_only=False, use_mlock=False, embedding=False)
         return model if isinstance(model, GPT4All) else None
-
+    
+    def apply(self, links: list[str]=None, url: str= "", model=None):
+        links = links if links else []
+        if model is not None:
+            print("LLM is active.")
+            print(model)
+        self.setup_firefox()
+        if url:
+            links = self.linksFromLink(url)
+        self.fillApps(links, model=model if isinstance(
+            model, GPT4All) else None, inBatches=False)
+        
     def main(self, model=None):
         if model is not None:
             print("LLM is active.")
